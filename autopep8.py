@@ -920,6 +920,8 @@ def main():
                       help='print the diff for the fixed source')
     parser.add_option('-i', '--in-place', action='store_true',
                       help='make changes to files in place')
+    parser.add_option('--check-syntax', action='store_true',
+                      help='skip files with invalid syntax')
     parser.add_option('-p', '--pep8-passes',
                       default=PEP8_PASSES_MAX, type='int',
                       help='maximum number of additional pep8 passes'
